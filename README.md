@@ -14,16 +14,21 @@ defaults.pcm.dmix.rate 48000
 defaults.pcm.dmix.format S16_LE
 
 
+.
+.
 
 speaker-test -c2 -l1
 
 aplay -Dhw:1 --dump-hw-params /usr/share/sounds/alsa/Front_Right.wav
 
-
+.
+.
 sudo systemctl restart raspotify 
 
 tail -f /var/log/syslog
 
+.
+.
 
 aplay -l
 
